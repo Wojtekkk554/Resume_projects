@@ -26,18 +26,20 @@ The data flows through three distinct layers:
 ![Data Architecture](docs/architecture/data_architecture.png)
 
 ## Repository Structure
-- scripts/bronze/: DDL and Load scripts for raw data.
-- scripts/silver/: Cleansing logic and transformation procedures.
-- scripts/gold/: Dimensional modeling (Star Schema) and analytical queries.
-- datasets/: Raw Olist data files.
-- docs/: Technical documentation and architecture diagrams.
-- tests/: Scripts for verifying data quality and referential integrity.
+- **analytics/**: Jupyter Notebook (`.ipynb`) containing visual business analysis and insights.
+- **scripts/bronze/**: DDL and Load scripts for raw data.
+- **scripts/silver/**: Cleansing logic and transformation procedures.
+- **scripts/gold/**: Dimensional modeling (Star Schema).
+- **datasets/**: Raw Olist data files.
+- **docs/**: Technical documentation and architecture diagrams.
+- **tests/**: Scripts for verifying data quality and referential integrity.
 
 ## Getting Started
-1.  Clone the repository.
-2.  Run scripts/bronze/prepare_datasets.ps1 to prepare source files.
-3.  Execute scripts/run_pipeline.sql to build the entire warehouse from scratch.
-4.  Explore analytical insights in scripts/gold/analytics.sql.
+1. Clone the repository.
+2. Run `scripts/bronze/prepare_datasets.ps1` to prepare source files.
+3. Execute `scripts/run_pipeline.sql` to build the entire warehouse from scratch.
+4. Explore interactive analytical insights in `analytics/olist_insights.ipynb`.
+5. Additional queries are available in `scripts/gold/analytics.sql`.
 
 ## Key Business Insights
 - Revenue trends and seasonal growth.
